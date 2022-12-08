@@ -1,12 +1,13 @@
 let monkeys = [
   {
     name: "Emma",
-    species: "redbuttmonkey",
+    species: "baboon",
     price: "$800",
     available: true,
     age: 1,
     gender: "female",
     smart: "sorta",
+    img: "https://th.bing.com/th/id/R.849ea1147da1aad52b7f4d1e5f4cfc9d?rik=614HAkV%2bJMdErw&pid=ImgRaw&r=0",
   },
   {
     name: "Daquavian",
@@ -16,6 +17,7 @@ let monkeys = [
     age: 0.5,
     gender: "male",
     smart: "no",
+    img: "https://th.bing.com/th/id/R.a47ab6ccbf401b88034f043122fc26c1?rik=OsEMXOlQwrdVig&riu=http%3a%2f%2felelurcom%2fdata_images%2fmammals%2fsnub-nosed-monkey%2fsnub-nosed-monkey-06.jpg&ehk=qLxhQS64Cl1hnr2CWRA1tHrlklSHeZ%2bKcodq66DN%2f0w%3d&risl=&pid=ImgRaw&r=0",
   },
   {
     name: "Demarcus",
@@ -25,6 +27,7 @@ let monkeys = [
     age: 2,
     gender: "male",
     smart: "no",
+    img: "https://th.bing.com/th/id/OIP.K53JfMfOkZXAX3YIjAG_lAHaEK?pid=ImgDet&rs=1",
   },
   {
     name: "Tyrone",
@@ -34,6 +37,7 @@ let monkeys = [
     age: 3,
     gender: "male",
     smart: "no",
+    img: "https://th.bing.com/th/id/R.c0c2757aa560b06461d115bcb4149edc?rik=aD0gMBRnckBdAg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-7UxcR1lamNI%2fTsND1xkPkvI%2fAAAAAAAACoo%2fhM_5dMDWp64%2fs1600%2fspider5.jpg&ehk=sgL0IDDkCoD0jBct5KuSSkQTwIEYVSBWIfr0DSOjziM%3d&risl=&pid=ImgRaw&r=0",
   },
   {
     name: "Jamal",
@@ -43,15 +47,17 @@ let monkeys = [
     age: 1.5,
     gender: "male",
     smart: "no",
+    img: "https://th.bing.com/th/id/OIP.G5cmNeuj8tFAFKcnmEvvLwHaF7?pid=ImgDet&rs=1",
   },
   {
     name: "Gertrude",
-    species: "redbuttmonkey",
+    species: "baboon",
     price: "$5",
     available: false,
     age: 0.2,
     gender: "female",
     smart: "no",
+    img: "https://c1.staticflickr.com/9/8475/8104032995_3d15b7fcf3_z.jpg",
   },
   {
     name: "Bertrude",
@@ -61,6 +67,7 @@ let monkeys = [
     age: 1,
     gender: "female",
     smart: "yes",
+    img: "https://th.bing.com/th/id/R.fc8ffdbaf6073ead50a4f7d10282e17e?rik=WYNww4p%2f8y1lhw&pid=ImgRaw&r=0",
   },
   {
     name: "Bob",
@@ -70,15 +77,17 @@ let monkeys = [
     age: 2,
     gender: "male",
     smart: "no",
+    img: "https://th.bing.com/th/id/R.beafae40c32f3a8b0c3cd9358703ed5e?rik=rUokrTyuCJSyfg&pid=ImgRaw&r=0",
   },
   {
     name: "Bobby",
     species: "chimpanzee",
     price: "$1500",
     available: true,
-    age: 1.5,
+    age: 50,
     gender: "male",
     smart: "no",
+    img: "https://d.newsweek.com/en/full/712711/gettyimages-630428068.jpg",
   },
   {
     name: "Tammy",
@@ -88,6 +97,7 @@ let monkeys = [
     age: 1,
     gender: "female",
     smart: "yes",
+    img: "https://th.bing.com/th/id/OIP.CKjaniWOYXYQRVsdzXP-HQHaE8?pid=ImgDet&rs=1",
   },
   {
     name: "Tommy",
@@ -97,6 +107,7 @@ let monkeys = [
     age: 0.3,
     gender: "male",
     smart: "no",
+    img: "https://exchange.nottingham.ac.uk/content/uploads/Gorilla-page-one-DSC_9545.jpg",
   },
   {
     name: "Johnny",
@@ -106,6 +117,7 @@ let monkeys = [
     age: 5,
     gender: "male",
     smart: "yes",
+    img: "https://i.ytimg.com/vi/AlR1F2SP2uw/hqdefault.jpg",
   },
   {
     name: "SIUUUU",
@@ -115,6 +127,7 @@ let monkeys = [
     age: 16,
     gender: "female",
     smart: "no",
+    img: "https://www.capsforsale.org/wp-content/uploads/2020/06/Proboscis-Monkey.jpg",
   },
   {
     name: "Chaquille",
@@ -124,6 +137,7 @@ let monkeys = [
     age: 35,
     gender: "male",
     smart: "no",
+    img: "https://th.bing.com/th/id/OIP.RPjp3YwUs_ArWbqN1eYbywHaE8?pid=ImgDet&rs=1",
   },
   {
     name: "Pablo",
@@ -133,6 +147,7 @@ let monkeys = [
     age: 49,
     gender: "male",
     smart: "no",
+    img: "https://th.bing.com/th/id/OIP.LxuOL7r3GSAFS5aJar0Y9QHaJX?pid=ImgDet&rs=1",
   },
 ];
 export { monkeys };

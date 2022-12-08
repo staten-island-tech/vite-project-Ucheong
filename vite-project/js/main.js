@@ -22,7 +22,6 @@ document.querySelector("#app").innerHTML = `
   </div>
 `;
 
-setupCounter(document.querySelector("#counter"));
 monkeys
   .filter((monkey) => monkey.gender === "male")
   .forEach((monkey) => console.log(monkey.gender));
@@ -40,3 +39,5 @@ monkeys
   .forEach((monkey) => console.log(monkey.smart));
 const monkeys2 = monkeys.price.map((monkey) => monkey * 2);
 console.log(monkeys2);
+
+setupCounter(document.querySelector("#counter"));
