@@ -9,8 +9,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-font-size: 100rem;
-color: aqua;
+font-size: 6rem;
+color: black;
 }
 
 .card {
@@ -21,3 +21,19 @@ flex-wrap: wrap;
 padding: 1rem;
 }
 
+:root {
+--white: white;
+--black: black;
+}
+
+.light {
+    color: black;
+    background-color: var(--light);
+    border-color: black;
+}
+
+.dark {
+    color: white;
+    background-color: var(--black);
+    border-color: white;
+}
