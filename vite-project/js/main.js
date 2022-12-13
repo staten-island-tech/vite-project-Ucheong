@@ -9,38 +9,58 @@ document.querySelector("#app").innerHTML = `
     <h1>Pet Monkeys</h1> 
     <button class="light">Light</button>
     <button class="dark">Dark</button>
+    <button class="male">Male</button>
+    <button class="female">Female</button>
+    <button class="age">Old</button>
+    <button class="expensive">Expensive</button>
+    <button class="available">Available</button>
+    <button class="smart">Smart</button>
   </div>`;
 
 document.querySelector(".light").addEventListener("click", function () {
-  if (document.body.classList.contains("light")) {
-    document.body.classList.add("dark");
-    document.body.classList.remove("light");
-  }
+  document.body.classList.add("light");
+  document.body.classList.remove("dark");
 });
 
 document.querySelector(".dark").addEventListener("click", function () {
-  if (document.body.classList.contains("dark")) {
-    document.body.classList.add("light");
-    document.body.classList.remove("dark");
-  }
+  document.body.classList.add("dark");
+  document.body.classList.remove("light");
 });
 
-monkeys
-  .filter((monkey) => monkey.gender === "male")
-  .forEach((monkey) => console.log(monkey.name));
-monkeys
-  .filter((monkey) => monkey.age > "15")
-  .forEach((monkey) => console.log(monkey.name));
-monkeys
-  .filter((monkey) => monkey.available === true)
-  .forEach((monkey) => console.log(monkey.name));
-monkeys
-  .filter((monkey) => monkey.price > "$1000")
-  .forEach((monkey) => console.log(monkey.name));
-monkeys
-  .filter((monkey) => monkey.smart === "no")
-  .forEach((monkey) => console.log(monkey.name));
-const monkeys2 = monkeys.price.map((monkey) => monkey * 2);
-console.log(monkeys2);
+document.querySelector(".male").addEventListener("click", function () {
+  monkeys
+    .filter((monkey) => monkey.gender === "male")
+    .forEach((monkey) => console.log(monkey.name));
+});
+
+document.querySelector(".age").addEventListener("click", function () {
+  monkeys
+    .filter((monkey) => monkey.gender === "female")
+    .forEach((monkey) => console.log(monkey.name));
+});
+
+document.querySelector(".age").addEventListener("click", function () {
+  monkeys
+    .filter((monkey) => monkey.age > "15")
+    .forEach((monkey) => console.log(monkey.name));
+});
+
+document.querySelector(".expensive").addEventListener("click", function () {
+  monkeys
+    .filter((monkey) => monkey.price > "$1000")
+    .forEach((monkey) => console.log(monkey.name));
+});
+
+document.querySelector(".available").addEventListener("click", function () {
+  monkeys
+    .filter((monkey) => monkey.available === true)
+    .forEach((monkey) => console.log(monkey.name));
+});
+
+document.querySelector(".smart").addEventListener("click", function () {
+  monkeys
+    .filter((monkey) => monkey.smart === "yes")
+    .forEach((monkey) => console.log(monkey.name));
+});
 
 setupCounter(document.querySelector("#counter"));
