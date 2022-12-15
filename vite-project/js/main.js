@@ -33,7 +33,7 @@ document.querySelector(".male").addEventListener("click", function () {
     .forEach((monkey) => console.log(monkey.name));
 });
 
-document.querySelector(".age").addEventListener("click", function () {
+document.querySelector(".female").addEventListener("click", function () {
   monkeys
     .filter((monkey) => monkey.gender === "female")
     .forEach((monkey) => console.log(monkey.name));
@@ -63,4 +63,18 @@ document.querySelector(".smart").addEventListener("click", function () {
     .forEach((monkey) => console.log(monkey.name));
 });
 
+function card() {
+  DOMSelectors.display.insertAdjacentHTML("afterbegin"),
+    `<div class= "display-card">
+    <h1 class="name">${monkeys.name}</h1>
+    <h2 class="type">${monkeys.species}</h2>
+    <img class= "display-img" src="${monkeys.img}">
+    <h3 class= "price> ${monkeys.price}</h3>
+    <h3 class="age"> ${monkeys.age}</h3>
+    <h3 class="gender">${monkeys.gender}</h3>
+    <h3 class="available">${monkeys.available}</h3>
+    <h3 class="IQ">${monkeys.smart}</h3>
+     </div>`;
+}
+// gender, availability, IQ
 setupCounter(document.querySelector("#counter"));
