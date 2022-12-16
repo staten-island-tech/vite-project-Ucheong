@@ -13,12 +13,13 @@ font-size: 6rem;
 color: black;
 }
 
-.card {
+.display-card {
 display: flex;
 align-items: center;
 justify-content: space-around;
 flex-wrap: wrap;
 padding: 1rem;
+background-color: blueviolet;
 }
 
 :root {

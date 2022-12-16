@@ -1,8 +1,10 @@
 import "../styles/style.css";
 import "../styles/variable.css";
 import "./monkeys";
+import "./dom";
 import { setupCounter } from "./counter.js";
 import { monkeys } from "./monkeys";
+import { DOMSelectors } from "./dom";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -59,22 +61,27 @@ document.querySelector(".available").addEventListener("click", function () {
 
 document.querySelector(".smart").addEventListener("click", function () {
   monkeys
-    .filter((monkey) => monkey.smart === "yes")
+    .filter((monkey) => monkey.smart === "yes" && monkeys.smart === "sorta")
     .forEach((monkey) => console.log(monkey.name));
 });
 
 function card() {
-  DOMSelectors.display.insertAdjacentHTML("afterbegin"),
-    `<div class= "display-card">
+  DOMSelectors.display.insertAdjacentHTML(
+    "beforebegin",
+    `<div class="display">
+    <div class= "display-card">
     <h1 class="name">${monkeys.name}</h1>
     <h2 class="type">${monkeys.species}</h2>
     <img class= "display-img" src="${monkeys.img}">
     <h3 class= "price> ${monkeys.price}</h3>
-    <h3 class="age"> ${monkeys.age}</h3>
+    <h3 class="old"> ${monkeys.age}</h3>
     <h3 class="gender">${monkeys.gender}</h3>
-    <h3 class="available">${monkeys.available}</h3>
+    <h3 class="availability">${monkeys.available}</h3>
     <h3 class="IQ">${monkeys.smart}</h3>
-     </div>`;
+    </div>
+    </div>`
+  );
 }
-// gender, availability, IQ
+card();
+
 setupCounter(document.querySelector("#counter"));

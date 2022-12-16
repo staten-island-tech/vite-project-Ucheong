@@ -7,4 +7,7 @@ const DOMSelectors = {
   expensive: document.querySelector(".expensive"),
   available: document.querySelector(".available"),
   smart: document.querySelector(".smart"),
+  display: document.querySelector(".display"),
 };
+
+export { DOMSelectors };
