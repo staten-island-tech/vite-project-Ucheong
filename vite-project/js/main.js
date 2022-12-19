@@ -65,23 +65,22 @@ document.querySelector(".smart").addEventListener("click", function () {
     .forEach((monkey) => console.log(monkey.name));
 });
 
-function card() {
+monkeys.forEach((monkey) => {
   DOMSelectors.display.insertAdjacentHTML(
     "beforebegin",
     `<div class="display">
-    <div class= "display-card">
-    <h1 class="name">${monkeys.name}</h1>
-    <h2 class="type">${monkeys.species}</h2>
-    <img class= "display-img" src="${monkeys.img}">
-    <h3 class= "price> ${monkeys.price}</h3>
-    <h3 class="old"> ${monkeys.age}</h3>
-    <h3 class="gender">${monkeys.gender}</h3>
-    <h3 class="availability">${monkeys.available}</h3>
-    <h3 class="IQ">${monkeys.smart}</h3>
-    </div>
-    </div>`
+<div class= "display-card">
+<h1 class="name">${monkey.name}</h1>
+<h2 class="type">${monkey.species}</h2>
+<img class= "display-img" src="${monkey.img}">
+<h3 class= "price> ${monkey.price}</h3>
+<h3 class="old"> ${monkey.age}</h3>
+<h3 class="gender">${monkey.gender}</h3>
+<h3 class="availability">${monkey.available}</h3>
+<h3 class="IQ">${monkey.smart}</h3>
+</div>
+</div>`
   );
-}
-card();
+});
 
 setupCounter(document.querySelector("#counter"));
