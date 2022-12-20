@@ -8,18 +8,19 @@ h1,h2,h3,h4,h5,h6 {
     margin: 2rem;
 }
 
-h1 {
-font-size: 6rem;
-color: black;
-}
-
-.display-card {
+.display-card{
 display: flex;
 align-items: center;
 justify-content: space-around;
-flex-wrap: wrap;
+flex-direction: column;
 padding: 1rem;
-background-color: blueviolet;
+margin-left: 1rem;
+margin-right: 1rem;
+}
+
+.display-img {
+    width: 50vh;
+    height:20vw;
 }
 
 :root {
@@ -27,9 +28,10 @@ background-color: blueviolet;
 --black: black;
 }
 
+.buttons {
+}
+
 .light {
-    color: black;
-    background-color: var(--light);
     border-color: black;
 }
 
@@ -37,4 +39,28 @@ background-color: blueviolet;
     color: white;
     background-color: var(--black);
     border-color: white;
+}
+
+.male {
+    border-color: black;
+}
+
+.female {
+    border-color: black;
+}
+
+.age {
+    border-color: black;
+}
+
+.expensive {
+    border-color: black;
+}
+
+.available {
+    border-color: black;
+}
+
+.smart {
+    border-color: black;
 }

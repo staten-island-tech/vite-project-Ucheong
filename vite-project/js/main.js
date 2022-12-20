@@ -7,8 +7,8 @@ import { monkeys } from "./monkeys";
 import { DOMSelectors } from "./dom";
 
 document.querySelector("#app").innerHTML = `
-  <div>
     <h1>Pet Monkeys</h1> 
+    <div class="buttons">
     <button class="light">Light</button>
     <button class="dark">Dark</button>
     <button class="male">Male</button>
@@ -71,13 +71,13 @@ monkeys.forEach((monkey) => {
     `<div class="display">
 <div class= "display-card">
 <h1 class="name">${monkey.name}</h1>
-<h2 class="type">${monkey.species}</h2>
 <img class= "display-img" src="${monkey.img}">
-<h3 class= "price> ${monkey.price}</h3>
-<h3 class="old"> ${monkey.age}</h3>
-<h3 class="gender">${monkey.gender}</h3>
-<h3 class="availability">${monkey.available}</h3>
-<h3 class="IQ">${monkey.smart}</h3>
+<h3 class="type"> Species:${monkey.species}</h3>
+<h3 class= "price> Price:${monkey.price}</h3>
+<h3 class="old"> Age:${monkey.age}</h3>
+<h3 class="gender"> Gender:${monkey.gender}</h3>
+<h3 class="availability"> Available:${monkey.available}</h3>
+<h3 class="IQ"> Smart:${monkey.smart}</h3>
 </div>
 </div>`
   );

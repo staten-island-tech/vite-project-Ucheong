@@ -17,7 +17,7 @@ let monkeys = [
     age: 0.5,
     gender: "male",
     smart: "no",
-    img: "https://th.bing.com/th/id/R.a47ab6ccbf401b88034f043122fc26c1?rik=OsEMXOlQwrdVig&riu=http%3a%2f%2felelurcom%2fdata_images%2fmammals%2fsnub-nosed-monkey%2fsnub-nosed-monkey-06.jpg&ehk=qLxhQS64Cl1hnr2CWRA1tHrlklSHeZ%2bKcodq66DN%2f0w%3d&risl=&pid=ImgRaw&r=0",
+    img: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/golden-snub-nosed-monkey-portrait-shaanxi-china-staffan-widstrand--wild-wonders-of-china--natureplcom.jpg",
   },
   {
     name: "Demarcus",
