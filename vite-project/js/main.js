@@ -19,6 +19,22 @@ document.querySelector("#app").innerHTML = `
     <button class="smart">Smart</button>
   </div>`;
 
+monkeys.forEach((monkey) => {
+  DOMSelectors.display.insertAdjacentHTML(
+    "beforeend",
+    `<div class= "display-card">
+  <h1 class="name">${monkey.name}</h1>
+  <img class= "display-img" src="${monkey.img}">
+  <h3 class="type"> Species:${monkey.species}</h3>
+  <h3 class= "price> Price:${monkey.price}</h3>
+  <h3 class="old"> Age:${monkey.age}</h3>
+  <h3 class="gender"> Gender:${monkey.gender}</h3>
+  <h3 class="availability"> Available:${monkey.available}</h3>
+  <h3 class="IQ"> Smart:${monkey.smart}</h3>
+  </div>`
+  );
+});
+
 document.querySelector(".light").addEventListener("click", function () {
   document.body.classList.add("light");
   document.body.classList.remove("dark");
@@ -61,26 +77,6 @@ document.querySelector(".available").addEventListener("click", function () {
 
 document.querySelector(".smart").addEventListener("click", function () {
   monkeys
-    .filter((monkey) => monkey.smart === "yes" && monkeys.smart === "sorta")
+    .filter((monkey) => monkey.smart === "yes" || monkey.smart === "sorta")
     .forEach((monkey) => console.log(monkey.name));
 });
-
-monkeys.forEach((monkey) => {
-  DOMSelectors.display.insertAdjacentHTML(
-    "beforebegin",
-    `<div class="display">
-<div class= "display-card">
-<h1 class="name">${monkey.name}</h1>
-<img class= "display-img" src="${monkey.img}">
-<h3 class="type"> Species:${monkey.species}</h3>
-<h3 class= "price> Price:${monkey.price}</h3>
-<h3 class="old"> Age:${monkey.age}</h3>
-<h3 class="gender"> Gender:${monkey.gender}</h3>
-<h3 class="availability"> Available:${monkey.available}</h3>
-<h3 class="IQ"> Smart:${monkey.smart}</h3>
-</div>
-</div>`
-  );
-});
-
-setupCounter(document.querySelector("#counter"));
