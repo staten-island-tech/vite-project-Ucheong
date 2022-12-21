@@ -2,7 +2,6 @@ import "../styles/style.css";
 import "../styles/variable.css";
 import "./monkeys";
 import "./dom";
-import { setupCounter } from "./counter.js";
 import { monkeys } from "./monkeys";
 import { DOMSelectors } from "./dom";
 
