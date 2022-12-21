@@ -16,6 +16,7 @@ document.querySelector("#app").innerHTML = `
     <button class="expensive">Expensive</button>
     <button class="available">Available</button>
     <button class="smart">Smart</button>
+    <button class="inflation">Prices after Inflation</button>
   </div>`;
 
 monkeys.forEach((monkey) => {
@@ -44,10 +45,19 @@ document.querySelector(".dark").addEventListener("click", function () {
   document.body.classList.remove("light");
 });
 
+document.querySelector(".inflation").addEventListener("click", function () {});
+
 document.querySelector(".male").addEventListener("click", function () {
   monkeys
     .filter((monkey) => monkey.gender === "male")
     .forEach((monkey) => console.log(monkey.name));
+  if (document.body.classList.contains("display-card")) {
+    document.body.classList.add("display-card");
+    document.body.classList.remove("display-card");
+  } else {
+    document.body.classList.contains("display-card");
+    document.body.classList.remove("display-card");
+  }
 });
 
 document.querySelector(".female").addEventListener("click", function () {
