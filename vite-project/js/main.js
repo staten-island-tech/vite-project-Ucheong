@@ -5,20 +5,6 @@ import "./dom";
 import { monkeys } from "./monkeys";
 import { DOMSelectors } from "./dom";
 
-document.querySelector("#app").innerHTML = `
-    <h1>Pet Monkeys</h1> 
-    <div class="buttons">
-    <button class="light">Light</button>
-    <button class="dark">Dark</button>
-    <button class="male">Male</button>
-    <button class="female">Female</button>
-    <button class="age">Old</button>
-    <button class="expensive">Expensive</button>
-    <button class="available">Available</button>
-    <button class="smart">Smart</button>
-    <button class="inflation">Prices after Inflation</button>
-  </div>`;
-
 monkeys.forEach((monkey) => {
   DOMSelectors.display.insertAdjacentHTML(
     "beforeend",
@@ -44,8 +30,6 @@ document.querySelector(".dark").addEventListener("click", function () {
   document.body.classList.add("dark");
   document.body.classList.remove("light");
 });
-
-document.querySelector(".inflation").addEventListener("click", function () {});
 
 document.querySelector(".male").addEventListener("click", function () {
   monkeys

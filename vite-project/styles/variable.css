@@ -1,6 +1,11 @@
 @import url(variable.css);
+:root {
+    --black: black;
+    --white: white;
+    } 
+
 body {
-    background-color: white;
+    background-color: var(--white);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -32,12 +37,10 @@ h1,h2,h3,h4,h5,h6 {
     height: auto;
   }
 
-:root {
---black: black;
-} 
 
 .light {
     border-color: black;
+    background-color: var(--white);
 }
 
 .dark {
