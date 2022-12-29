@@ -1,27 +1,114 @@
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+@import url(style.css);
+:root {
+    --black: black;
+    --white: white;
+    } 
+
+body {
+    background-color: var(--white);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    margin: 2rem;
 }
+
+.display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90vw;
+    margin: 2rem auto;
+  }
+
+  .display-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 55rem;
+    margin: 1rem 3rem;
+    align-items: center;
+    border-radius: 3rem;
+    border:solid;
+  }
+
+  .display-img {
+    width: 100%;
+    height: auto
+  }
+
+
+.light {
+    border-color: black;
+    background-color: var(--white);
+}
+
+.dark {
+    color: white;
+    background-color: var(--black);
+    border-color: white;
+}
+
+.male {
+    border-color: black;
+}
+
+.female {
+    border-color: black;
+}
+
+.age {
+    border-color: black;
+}
+
+.expensive {
+    border-color: black;
+}
+
+.available {
+    border-color: black;
+}
+
+.smart {
+    border-color: black;
+}
+
+.inflation {
+    border-color: black;
+}
+
+.original {
+    border-color: black;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  .text {
+    margin: 0 auto;
+  }
+  .filter {
+    margin-top: 2rem;
+  }
+  .title {
+    font-size: 4rem;
+  }
+
+  

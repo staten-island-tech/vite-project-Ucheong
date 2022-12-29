@@ -1,5 +1,4 @@
 import "../styles/style.css";
-import "../styles/variable.css";
 import "./monkeys";
 import "./dom";
 import { monkeys } from "./monkeys";
@@ -9,14 +8,14 @@ monkeys.forEach((monkey) => {
   DOMSelectors.display.insertAdjacentHTML(
     "beforeend",
     `<div class= "display-card">
-  <h1 class="name">${monkey.name}</h1>
+  <h1>${monkey.name}</h1>
   <img class= "display-img" src="${monkey.img}">
-  <h3 class="type"> Species:${monkey.species}</h3>
-  <h3 class= "price> Price:${monkey.price}</h3>
-  <h3 class="old"> Age:${monkey.age}</h3>
-  <h3 class="gender"> Gender:${monkey.gender}</h3>
-  <h3 class="availability"> Available:${monkey.available}</h3>
-  <h3 class="IQ"> Smart:${monkey.smart}</h3>
+  <h3 class="text"> Species: ${monkey.species}</h3>
+  <h3 class= "text"> Price: ${monkey.price}</h3>
+  <h3 class="text"> Age: ${monkey.age}</h3>
+  <h3 class="text"> Gender: ${monkey.gender}</h3>
+  <h3 class="text"> Available: ${monkey.available}</h3>
+  <h3 class="text"> Smart: ${monkey.smart}</h3>
   </div>`
   );
 });
@@ -31,45 +30,168 @@ document.querySelector(".dark").addEventListener("click", function () {
   document.body.classList.remove("light");
 });
 
-document.querySelector(".male").addEventListener("click", function () {
+function original() {
+  monkeys.forEach((monkey) => {
+    DOMSelectors.display.insertAdjacentHTML(
+      "beforeend",
+      `<div class= "display-card">
+    <h1>${monkey.name}</h1>
+    <img class= "display-img" src="${monkey.img}">
+    <h3 class="text"> Species: ${monkey.species}</h3>
+    <h3 class= "text"> Price: ${monkey.price}</h3>
+    <h3 class="text"> Age: ${monkey.age}</h3>
+    <h3 class="text"> Gender: ${monkey.gender}</h3>
+    <h3 class="text"> Available: ${monkey.available}</h3>
+    <h3 class="text"> Smart: ${monkey.smart}</h3>
+    </div>`
+    );
+  });
+}
+document.querySelector(".original").addEventListener("click", function () {
+  DOMSelectors.display.innerHTML = ``;
+  original();
+});
+
+function male() {
   monkeys
     .filter((monkey) => monkey.gender === "male")
-    .forEach((monkey) => console.log(monkey.name));
-  if (document.body.classList.contains("display-card")) {
-    document.body.classList.add("display-card");
-    document.body.classList.remove("display-card");
-  } else {
-    document.body.classList.contains("display-card");
-    document.body.classList.remove("display-card");
-  }
+    .forEach((monkey) => {
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+        `<div class= "display-card">
+    <h1>${monkey.name}</h1>
+    <img class= "display-img" src="${monkey.img}">
+    <h3 class="text"> Species: ${monkey.species}</h3>
+    <h3 class= "text"> Price: ${monkey.price}</h3>
+    <h3 class="text"> Age: ${monkey.age}</h3>
+    <h3 class="text"> Gender: ${monkey.gender}</h3>
+    <h3 class="text"> Available: ${monkey.available}</h3>
+    <h3 class="text"> Smart: ${monkey.smart}</h3>
+    </div>`
+      );
+    });
+}
+document.querySelector(".male").addEventListener("click", function () {
+  DOMSelectors.display.innerHTML = ``;
+  male();
 });
 
-document.querySelector(".female").addEventListener("click", function () {
+function female() {
   monkeys
     .filter((monkey) => monkey.gender === "female")
-    .forEach((monkey) => console.log(monkey.name));
+    .forEach((monkey) => {
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+        `<div class= "display-card">
+        <h1>${monkey.name}</h1>
+        <img class= "display-img" src="${monkey.img}">
+        <h3 class="text"> Species: ${monkey.species}</h3>
+        <h3 class= "text"> Price: ${monkey.price}</h3>
+        <h3 class="text"> Age: ${monkey.age}</h3>
+        <h3 class="text"> Gender: ${monkey.gender}</h3>
+        <h3 class="text"> Available: ${monkey.available}</h3>
+        <h3 class="text"> Smart: ${monkey.smart}</h3>
+        </div>`
+      );
+    });
+}
+document.querySelector(".female").addEventListener("click", function () {
+  DOMSelectors.display.innerHTML = ``;
+  female();
 });
 
-document.querySelector(".age").addEventListener("click", function () {
+function age() {
   monkeys
     .filter((monkey) => monkey.age > "15")
-    .forEach((monkey) => console.log(monkey.name));
+    .forEach((monkey) => {
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+        `<div class= "display-card">
+        <h1>${monkey.name}</h1>
+        <img class= "display-img" src="${monkey.img}">
+        <h3 class="text"> Species: ${monkey.species}</h3>
+        <h3 class= "text"> Price: ${monkey.price}</h3>
+        <h3 class="text"> Age: ${monkey.age}</h3>
+        <h3 class="text"> Gender: ${monkey.gender}</h3>
+        <h3 class="text"> Available: ${monkey.available}</h3>
+        <h3 class="text"> Smart: ${monkey.smart}</h3>
+        </div>`
+      );
+    });
+}
+document.querySelector(".age").addEventListener("click", function () {
+  DOMSelectors.display.innerHTML = ``;
+  age();
 });
 
-document.querySelector(".expensive").addEventListener("click", function () {
+function expensive() {
   monkeys
     .filter((monkey) => monkey.price > "$1000")
-    .forEach((monkey) => console.log(monkey.name));
+    .forEach((monkey) => {
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+        `<div class= "display-card">
+        <h1>${monkey.name}</h1>
+        <img class= "display-img" src="${monkey.img}">
+        <h3 class="text"> Species: ${monkey.species}</h3>
+        <h3 class= "text"> Price: ${monkey.price}</h3>
+        <h3 class="text"> Age: ${monkey.age}</h3>
+        <h3 class="text"> Gender: ${monkey.gender}</h3>
+        <h3 class="text"> Available: ${monkey.available}</h3>
+        <h3 class="text"> Smart: ${monkey.smart}</h3>
+        </div>`
+      );
+    });
+}
+document.querySelector(".expensive").addEventListener("click", function () {
+  DOMSelectors.display.innerHTML = ``;
+  expensive();
 });
 
-document.querySelector(".available").addEventListener("click", function () {
+function available() {
   monkeys
     .filter((monkey) => monkey.available === true)
-    .forEach((monkey) => console.log(monkey.name));
+    .forEach((monkey) => {
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+        `<div class= "display-card">
+        <h1>${monkey.name}</h1>
+        <img class= "display-img" src="${monkey.img}">
+        <h3 class="text"> Species: ${monkey.species}</h3>
+        <h3 class= "text"> Price: ${monkey.price}</h3>
+        <h3 class="text"> Age: ${monkey.age}</h3>
+        <h3 class="text"> Gender: ${monkey.gender}</h3>
+        <h3 class="text"> Available: ${monkey.available}</h3>
+        <h3 class="text"> Smart: ${monkey.smart}</h3>
+        </div>`
+      );
+    });
+}
+document.querySelector(".available").addEventListener("click", function () {
+  DOMSelectors.display.innerHTML = ``;
+  available();
 });
 
-document.querySelector(".smart").addEventListener("click", function () {
+function smart() {
   monkeys
     .filter((monkey) => monkey.smart === "yes" || monkey.smart === "sorta")
-    .forEach((monkey) => console.log(monkey.name));
+    .forEach((monkey) => {
+      DOMSelectors.display.insertAdjacentHTML(
+        "beforeend",
+        `<div class= "display-card">
+        <h1>${monkey.name}</h1>
+        <img class= "display-img" src="${monkey.img}">
+        <h3 class="text"> Species: ${monkey.species}</h3>
+        <h3 class= "text"> Price: ${monkey.price}</h3>
+        <h3 class="text"> Age: ${monkey.age}</h3>
+        <h3 class="text"> Gender: ${monkey.gender}</h3>
+        <h3 class="text"> Available: ${monkey.available}</h3>
+        <h3 class="text"> Smart: ${monkey.smart}</h3>
+        </div>`
+      );
+    });
+}
+document.querySelector(".smart").addEventListener("click", function () {
+  DOMSelectors.display.innerHTML = ``;
+  smart();
 });
