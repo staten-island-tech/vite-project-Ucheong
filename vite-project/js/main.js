@@ -11,7 +11,7 @@ monkeys.forEach((monkey) => {
   <h1>${monkey.name}</h1>
   <img class= "display-img" src="${monkey.img}">
   <h3 class="text"> Species: ${monkey.species}</h3>
-  <h3 class= "text"> Price: ${monkey.price}</h3>
+  <h3 class= "text"> Price: $${monkey.price}</h3>
   <h3 class="text"> Age: ${monkey.age}</h3>
   <h3 class="text"> Gender: ${monkey.gender}</h3>
   <h3 class="text"> Available: ${monkey.available}</h3>
@@ -38,7 +38,7 @@ function original() {
     <h1>${monkey.name}</h1>
     <img class= "display-img" src="${monkey.img}">
     <h3 class="text"> Species: ${monkey.species}</h3>
-    <h3 class= "text"> Price: ${monkey.price}</h3>
+    <h3 class= "text"> Price: $${monkey.price}</h3>
     <h3 class="text"> Age: ${monkey.age}</h3>
     <h3 class="text"> Gender: ${monkey.gender}</h3>
     <h3 class="text"> Available: ${monkey.available}</h3>
@@ -62,7 +62,7 @@ function male() {
     <h1>${monkey.name}</h1>
     <img class= "display-img" src="${monkey.img}">
     <h3 class="text"> Species: ${monkey.species}</h3>
-    <h3 class= "text"> Price: ${monkey.price}</h3>
+    <h3 class= "text"> Price: $${monkey.price}</h3>
     <h3 class="text"> Age: ${monkey.age}</h3>
     <h3 class="text"> Gender: ${monkey.gender}</h3>
     <h3 class="text"> Available: ${monkey.available}</h3>
@@ -86,7 +86,7 @@ function female() {
         <h1>${monkey.name}</h1>
         <img class= "display-img" src="${monkey.img}">
         <h3 class="text"> Species: ${monkey.species}</h3>
-        <h3 class= "text"> Price: ${monkey.price}</h3>
+        <h3 class= "text"> Price: $${monkey.price}</h3>
         <h3 class="text"> Age: ${monkey.age}</h3>
         <h3 class="text"> Gender: ${monkey.gender}</h3>
         <h3 class="text"> Available: ${monkey.available}</h3>
@@ -110,7 +110,7 @@ function age() {
         <h1>${monkey.name}</h1>
         <img class= "display-img" src="${monkey.img}">
         <h3 class="text"> Species: ${monkey.species}</h3>
-        <h3 class= "text"> Price: ${monkey.price}</h3>
+        <h3 class= "text"> Price: $${monkey.price}</h3>
         <h3 class="text"> Age: ${monkey.age}</h3>
         <h3 class="text"> Gender: ${monkey.gender}</h3>
         <h3 class="text"> Available: ${monkey.available}</h3>
@@ -126,7 +126,7 @@ document.querySelector(".age").addEventListener("click", function () {
 
 function expensive() {
   monkeys
-    .filter((monkey) => monkey.price > "$1000")
+    .filter((monkey) => monkey.price > 1000)
     .forEach((monkey) => {
       DOMSelectors.display.insertAdjacentHTML(
         "beforeend",
@@ -134,7 +134,7 @@ function expensive() {
         <h1>${monkey.name}</h1>
         <img class= "display-img" src="${monkey.img}">
         <h3 class="text"> Species: ${monkey.species}</h3>
-        <h3 class= "text"> Price: ${monkey.price}</h3>
+        <h3 class= "text"> Price: $${monkey.price}</h3>
         <h3 class="text"> Age: ${monkey.age}</h3>
         <h3 class="text"> Gender: ${monkey.gender}</h3>
         <h3 class="text"> Available: ${monkey.available}</h3>
@@ -158,7 +158,7 @@ function available() {
         <h1>${monkey.name}</h1>
         <img class= "display-img" src="${monkey.img}">
         <h3 class="text"> Species: ${monkey.species}</h3>
-        <h3 class= "text"> Price: ${monkey.price}</h3>
+        <h3 class= "text"> Price: $${monkey.price}</h3>
         <h3 class="text"> Age: ${monkey.age}</h3>
         <h3 class="text"> Gender: ${monkey.gender}</h3>
         <h3 class="text"> Available: ${monkey.available}</h3>
@@ -182,7 +182,7 @@ function smart() {
         <h1>${monkey.name}</h1>
         <img class= "display-img" src="${monkey.img}">
         <h3 class="text"> Species: ${monkey.species}</h3>
-        <h3 class= "text"> Price: ${monkey.price}</h3>
+        <h3 class= "text"> Price: $${monkey.price}</h3>
         <h3 class="text"> Age: ${monkey.age}</h3>
         <h3 class="text"> Gender: ${monkey.gender}</h3>
         <h3 class="text"> Available: ${monkey.available}</h3>

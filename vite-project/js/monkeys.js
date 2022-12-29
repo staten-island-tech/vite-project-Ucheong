@@ -2,7 +2,7 @@ let monkeys = [
   {
     name: "Emma",
     species: "baboon",
-    price: "$800",
+    price: 800,
     available: true,
     age: 1,
     gender: "female",
@@ -12,7 +12,7 @@ let monkeys = [
   {
     name: "Daquavian",
     species: "Snubnosedmonkey",
-    price: "$500",
+    price: 500,
     available: true,
     age: 0.5,
     gender: "male",
@@ -22,7 +22,7 @@ let monkeys = [
   {
     name: "Demarcus",
     species: "baboon",
-    price: "$1",
+    price: 1,
     available: true,
     age: 2,
     gender: "male",
@@ -32,7 +32,7 @@ let monkeys = [
   {
     name: "Tyrone",
     species: "Spidermonkey",
-    price: "$1000",
+    price: 1000,
     available: true,
     age: 3,
     gender: "male",
@@ -42,7 +42,7 @@ let monkeys = [
   {
     name: "Jamal",
     species: "Howlermonkey",
-    price: "$900",
+    price: 900,
     available: true,
     age: 1.5,
     gender: "male",
@@ -52,7 +52,7 @@ let monkeys = [
   {
     name: "Gertrude",
     species: "baboon",
-    price: "$5",
+    price: 5,
     available: false,
     age: 0.2,
     gender: "female",
@@ -62,7 +62,7 @@ let monkeys = [
   {
     name: "Bertrude",
     species: "orangutan",
-    price: "$200",
+    price: 200,
     available: false,
     age: 1,
     gender: "female",
@@ -72,7 +72,7 @@ let monkeys = [
   {
     name: "Bob",
     species: "gibbon",
-    price: "$2000",
+    price: 2000,
     available: true,
     age: 2,
     gender: "male",
@@ -82,7 +82,7 @@ let monkeys = [
   {
     name: "Bobby",
     species: "chimpanzee",
-    price: "$1500",
+    price: 1500,
     available: true,
     age: 50,
     gender: "male",
@@ -92,7 +92,7 @@ let monkeys = [
   {
     name: "Tammy",
     species: "tamarin",
-    price: "$350",
+    price: 350,
     available: true,
     age: 1,
     gender: "female",
@@ -102,7 +102,7 @@ let monkeys = [
   {
     name: "Tommy",
     species: "gorilla",
-    price: "$400",
+    price: 400,
     available: true,
     age: 0.3,
     gender: "male",
@@ -112,7 +112,7 @@ let monkeys = [
   {
     name: "Johnny",
     species: "gorilla",
-    price: "$2500",
+    price: 2500,
     available: true,
     age: 5,
     gender: "male",
@@ -122,7 +122,7 @@ let monkeys = [
   {
     name: "SIUUUU",
     species: "proboscismonkey",
-    price: "$1000000",
+    price: 1000000,
     available: true,
     age: 16,
     gender: "female",
@@ -132,7 +132,7 @@ let monkeys = [
   {
     name: "Chaquille",
     species: "gorilla",
-    price: "$50",
+    price: 50,
     available: true,
     age: 35,
     gender: "male",
@@ -142,7 +142,7 @@ let monkeys = [
   {
     name: "Pablo",
     species: "capuchin",
-    price: "$2",
+    price: 2,
     available: true,
     age: 49,
     gender: "male",
